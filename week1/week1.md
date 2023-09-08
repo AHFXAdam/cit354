@@ -7,6 +7,8 @@ em { font-style: normal; font-weight: bold; } //italic emphasis
 // colors
 s { color: green }
 em { color: green }
+details { background-color:lightgreen;}
+details summary {background-color:white;}
 </style>
 
 # Cloud Foundations
@@ -118,52 +120,140 @@ https://docs.aws.amazon.com/
 Workloads? 
     1) Amazon Elastic Compute Cloud (Amazon EC2) costs are billed on a monthly basis. 
     1) Customers retain full administrative access to their Amazon EC2 instances. 
-    1) _Amazon EC2 instances can be launched on-demand when needed._
+    1) Amazon EC2 instances can be launched on-demand when needed.
     1) Customers can permanently run enough instances to handle peak workloads.
+<details>
+<summary>
+Answer: </summary>Amazon EC2 instances can be launched on-demand when needed.
+</details>
+
 2) Which AWS service would simplify migration of a database to AWS? 
     1) AWS Storage Gateway
-    1) _AWS Database Migration Service (AWS DMS)_
+    1) AWS Database Migration Service (AWS DMS)
     1) Amazon Elastic Compute Cloud (Amazon EC2) 
     1) Amazon AppStream 2.0
+<details>
+<summary>
+Answer: </summary>AWS Database Migration Service (AWS DMS)
+</details>   
+
 3) Which AWS offering enables customers to find, buy, and immediately start using software solutions in
 their AWS environment? 
     1) AWS Config 
     2) AWS OpsWorks 
     3) AWS SDK 
-    4) _AWS Marketplace_
+    4) AWS Marketplace
+<details>
+<summary>
+Answer: </summary>AWS Marketplace
+</details>   
+
 4) Which AWS networking service enables a company to create a virtual network within AWS? 
     1) AWS Config
     2) Amazon Route 53 
     3) AWS Direct Connect 
-    4) _Amazon Virtual Private Cloud (Amazon VPC)_
+    4) Amazon Virtual Private Cloud (Amazon VPC)
+<details>
+<summary>
+Answer: </summary>Amazon Virtual Private Cloud (Amazon VPC)
+</details> 
+
 5) Which of the following is AWS's responsibility under the AWS shared responsibility model?
     1) Configuring third-party applications 
-    2) _Maintaining physical hardware_
+    2) Maintaining physical hardware
     3) Securing application access and data 
     4) Managing custom Amazon Machine Images (AMIs)
+<details>
+<summary>
+Answer: </summary>Maintaining physical hardware
+</details> 
+
 6) Which component of AWS global infrastructure does Amazon CloudFront use to ensure low-latency
 Delivery? 
     1) AWS Regions 
-    2) _AWS edge locations_ 
+    2) AWS edge locations 
     3) AWS Availability Zones 
     4) Amazon Virtual Private Cloud (Amazon VPC)
+<details>
+<summary>
+Answer: </summary>AWS edge locations 
+</details> 
+
 7) How would a system administrator add an additional layer of login security to a user's AWS
 Management Console? 
     1) Use AWS Cloud Directory 
     1) Audit AWS Identity and Access Management (IAM) roles
-    1) _Enable Multi-Factor Authentication_
+    1) Enable Multi-Factor Authentication
     1) Enable AWS CloudTrail
+<details>
+<summary>
+Answer: </summary>Enable Multi-Factor Authentication 
+</details> 
+     
 8) Which service can identify the user that made the API call when an Amazon Elastic Compute Cloud
 (Amazon EC2) instance is terminated? 
     1) Amazon CloudWatch 
-    1) _AWS CloudTrail_
+    1) AWS CloudTrail
     1) AWS X-Ray 
     1) AWS Identity and Access Management (AWS IAM)
-
+<details>
+<summary>
+Answer: </summary>AWS CloudTrail
+</details> 
 
 ## AWS Academy Course Material
 
 https://awsacademy.instructure.com/courses/57214/modules
 
 
+## Scavenger Hunt
 
+<details>
+<summary>Question #1: What guides and references exist for the Amazon EC2 service?</summary>
+        
+https://docs.aws.amazon.com/ec2/?id=docs_gateway
+
+* User Guides for Linux and Windows
+* API Reference
+* AWS CLI Reference
+* EC2 Instance Connect Reference
+* User Guide for Auto Scaling
+* VM Import/Export User Guide
+
+</details>
+<details>
+<summary>Question #2: Can you find the documentation that describes how to create an Amazon S3 bucket?</summary>
+        
+https://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html
+
+* From https://docs.aws.amazon.com/ click **S3**
+* Click the **Getting Started Guide**
+* Click **Create a Bucket**
+</details>
+<details>
+<summary>Question #3: Can you find a one-sentence summary of the AWS Cloud9 service?</summary>
+
+https://docs.aws.amazon.com/cloud9/?id=docs_gateway
+
+* AWS Cloud9 is a cloud-based integrated development environment (IDE) that you use to write, run, and debug code.
+</details>
+
+<details>
+<summary>Question #4: Which programming languages does the AWS Lambda service API support?</summary>
+
+https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-tools.html 
+
+* From the main AWS Documentation page, click the **AWS Lambda** link
+* Click the **API Reference** link
+* Click **Getting Started** > Tools to find a table that lists the following languages: _Node.js_, _Java_, _C#_, _Python_, _Ruby_, _Go_, and _PowerShell_
+
+</details>
+<details>
+<summary>Question #5: Find the tutorial that describes how to run a serverless Hello World application, then scroll through the documented steps. What two AWS services does the tutorial have you use?</summary>
+
+https://aws.amazon.com/getting-started/tutorials/run-serverless-code/
+
+* From the main AWS Documentation page, click **Tutorials and Projects**
+* In the **Websites & Web Apps** area, click the tutorial.
+* The tutorial has you use _AWS Lambda_ and _Amazon CloudWatch_
+</details>
